@@ -52,4 +52,9 @@ function onClick(event) {
 
   document.addEventListener("keydown", onKeyPress);
 }
-//er//
+function onKeyPress(event) {
+  if (event.key === "Escape") {
+    // Close modal window
+    basicLightbox.close();
+  }
+}
